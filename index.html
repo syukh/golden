@@ -16,18 +16,27 @@
 
 <body>
   <!-- 2. Section Home -->
-  <section class="min-h-screen bg-[url(./img/bg.png)] bg-cover pt-14">
-    <!-- Навігація -->
-    <header class="container mx-auto flex justify-between items-center">
-      <div class="text-[#FED136] font-[Dynalight] md:text-5xl">Golden</div>
-      <nuv class="text-xl text-white font-[Prompt] font-[100] flex gap-14">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nuv>
-    </header>
+  <section class="relative w-full min-h-screen bg-[url(./img/bg.png)] bg-cover inset-0">
+    <div class="absolute w-full h-full inset-0 bg-black/40 flex flex-col pt-14">
+      <!-- Навігація -->
+      <header class="container mx-auto flex justify-between items-center">
+        <div class="text-[#FED136] font-[Dynalight] md:text-5xl">Golden</div>
+        <nuv class="text-white font-[Prompt] font-extralight flex gap-14 uppercase tracking-wider">
+          <a href="#" class="font-semibold hover:text-[#FED136] transition">Home</a>
+          <a href="#" class="hover:text-[#FED136] transition">Services</a>
+          <a href="#" class="hover:text-[#FED136] transition">Portfolio</a>
+          <a href="#" class="hover:text-[#FED136] transition">About</a>
+          <a href="#" class="hover:text-[#FED136] transition">Contact</a>
+        </nuv>
+      </header>
+      <!-- Зоголовок сайту -->
+      <div class="flex flex-grow flex-col justify-center items-center  text-white">
+        <p class="text-5xl font-[Inter] mb-4">Welcome To Our Studio!</p>
+        <p class="text-8xl uppercase font-[Prompt] font-semibold mb-20">It’s nice to Meet you</p>
+        <button type="button" class="uppercase text-4xl font-bold bg-[#FED136] rounded-xl px-12 py-6">Tell Me
+          More</button>
+      </div>
+    </div>
   </section>
 </body>
 
