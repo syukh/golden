@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golden</title>
-  <!-- 1. Підключити шрифти та Tailwindcss -->
+  <!-- Підключити шрифти та Tailwindcss -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -15,29 +15,88 @@
 </head>
 
 <body>
-  <!-- 2. Section Home -->
-  <section class="relative w-full min-h-screen bg-[url(./img/bg.png)] bg-cover inset-0">
-    <div class="absolute w-full h-full inset-0 bg-black/40 flex flex-col pt-14">
+  <!-- Section Home -->
+  <section id="home" class="w-full bg-[url(./img/bg.png)] bg-cover bg-center">
+    <div class="min-h-screen bg-black/40 flex flex-col pt-6 md:pt-14">
+
       <!-- Навігація -->
-      <header class="container mx-auto flex justify-between items-center">
-        <div class="text-[#FED136] font-[Dynalight] md:text-5xl">Golden</div>
-        <nuv class="text-white font-[Prompt] font-extralight flex gap-14 uppercase tracking-wider">
+      <header class="relative container mx-auto px-6 flex justify-between items-center">
+        <div class="text-[#FED136] font-[Dynalight] text-4xl md:text-5xl">Golden</div>
+
+        <!-- Меню: на мобільних приховане, з md і вище - в ряд -->
+        <nav id="menu" class="hidden absolute top-full right-4 mt-4 w-48 flex-col gap-4 rounded-xl bg-black/60 p-6
+                 lg:static lg:mt-0 lg:w-auto lg:flex lg:flex-row lg:gap-14 lg:bg-transparent lg:p-0
+                 text-white font-[Prompt] font-extralight uppercase tracking-wider">
           <a href="#" class="font-semibold hover:text-[#FED136] transition">Home</a>
           <a href="#" class="hover:text-[#FED136] transition">Services</a>
           <a href="#" class="hover:text-[#FED136] transition">Portfolio</a>
           <a href="#" class="hover:text-[#FED136] transition">About</a>
           <a href="#" class="hover:text-[#FED136] transition">Contact</a>
-        </nuv>
+        </nav>
+
+        <!-- Кнопка-бургер: тільки на мобільних -->
+        <button id="burger" type="button" aria-label="Menu"
+          class="lg:hidden text-white flex flex-col items-center justify-between gap-1 md:gap-[6px]">
+          <div class="w-7 h-[3px] bg-white rounded-sm md:w-9"></div>
+          <div class="w-7 h-[3px] bg-white rounded-sm md:w-9"></div>
+          <div class="w-7 h-[3px] bg-white rounded-sm md:w-9"></div>
+        </button>
       </header>
-      <!-- Зоголовок сайту -->
-      <div class="flex flex-grow flex-col justify-center items-center  text-white">
-        <p class="text-5xl font-[Inter] mb-4">Welcome To Our Studio!</p>
-        <p class="text-8xl uppercase font-[Prompt] font-semibold mb-20">It’s nice to Meet you</p>
-        <button type="button" class="uppercase text-4xl font-bold bg-[#FED136] rounded-xl px-12 py-6">Tell Me
-          More</button>
+
+      <!-- Заголовок сайту -->
+      <div class="flex flex-grow flex-col justify-center items-center text-center text-white px-4 py-12">
+        <p class="text-xl sm:text-3xl lg:text-5xl font-[Inter] mb-2 sm:mb-4">Welcome To Our Studio!</p>
+        <p class="text-4xl sm:text-6xl lg:text-8xl uppercase font-[Prompt] font-semibold mb-10 lg:mb-20">
+          It’s nice to Meet you</p>
+        <button type="button" class="uppercase text-lg sm:text-2xl lg:text-4xl font-bold bg-[#FED136] text-white rounded-xl
+                 px-6 py-3 sm:px-10 sm:py-5 lg:px-12 lg:py-6">Tell Me More</button>
       </div>
     </div>
   </section>
+  <section id="services" class="py-36">
+    <div class="text-center">
+      <h2 class="text-7xl uppercase font-[Prompt] font-bold">Services</h2>
+      <p class="text-2xl text-stone-500 font-[Inter] font-light mb-20">Proin laculis purus consequat sem cure.</p>
+    </div>
+    <!-- Сервіси -->
+    <div class="container mx-auto grid grid-cols-1 gap-14 lg:grid-cols-3 lg:gap-20">
+      <div class="flex flex-col items-center text-center">
+        <img src="./img/services/icon-basket.svg" alt="" class="h-24 w-24">
+        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">E-Commerce</h3>
+        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
+          porttitora
+          entum suscipit
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <img src="./img/services/icon-laptop.svg" alt="" class="h-24 w-24">
+        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">Responsive Web</h3>
+        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
+          porttitora
+          entum suscipit
+        </p>
+      </div>
+      <div class="flex flex-col items-center text-center">
+        <img src="./img/services/icon-locked.svg" alt="" class="h-24 w-24">
+        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">Web Security</h3>
+        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
+          porttitora
+          entum suscipit
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script>
+    // Показати / сховати меню на мобільних
+    document.getElementById('burger').addEventListener('click', () => {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+    });
+  </script>
 </body>
 
 </html>
