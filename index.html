@@ -17,7 +17,7 @@
 <body>
   <!-- Section Home -->
   <section id="home" class="w-full bg-[url(./img/bg.png)] bg-cover bg-center">
-    <div class="min-h-screen bg-black/40 flex flex-col pt-6 md:pt-14">
+    <div class="min-h-screen bg-black/40 flex flex-col pt-6 lg:pt-10">
 
       <!-- Навігація -->
       <header class="relative container mx-auto px-6 flex justify-between items-center">
@@ -25,8 +25,8 @@
 
         <!-- Меню: на мобільних приховане, з md і вище - в ряд -->
         <nav id="menu" class="hidden absolute top-full right-4 mt-4 w-48 flex-col gap-4 rounded-xl bg-black/60 p-6
-                 lg:static lg:mt-0 lg:w-auto lg:flex lg:flex-row lg:gap-14 lg:bg-transparent lg:p-0
-                 text-white font-[Prompt] font-extralight uppercase tracking-wider">
+            lg:static lg:mt-0 lg:w-auto lg:flex lg:flex-row lg:gap-10 lg:bg-transparent lg:p-0 lg:text-sm xl:text-base xl:gap-14
+          text-white font-[Prompt] font-extralight uppercase tracking-wider">
           <a href="#" class="font-semibold hover:text-[#FED136] transition">Home</a>
           <a href="#" class="hover:text-[#FED136] transition">Services</a>
           <a href="#" class="hover:text-[#FED136] transition">Portfolio</a>
@@ -46,42 +46,40 @@
       <!-- Заголовок сайту -->
       <div class="flex flex-grow flex-col justify-center items-center text-center text-white px-4 py-12">
         <p class="text-xl sm:text-3xl lg:text-5xl font-[Inter] mb-2 sm:mb-4">Welcome To Our Studio!</p>
-        <p class="text-4xl sm:text-6xl lg:text-8xl uppercase font-[Prompt] font-semibold mb-10 lg:mb-20">
+        <p class="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl uppercase font-[Prompt] font-semibold mb-10 lg:mb-20">
           It’s nice to Meet you</p>
-        <button type="button" class="uppercase text-lg sm:text-2xl lg:text-4xl font-bold bg-[#FED136] text-white rounded-xl
+        <button type="button" class="uppercase text-lg sm:text-2xl lg:text-3xl xl:text-4xl font-bold bg-[#FED136] text-white rounded-xl
                  px-6 py-3 sm:px-10 sm:py-5 lg:px-12 lg:py-6">Tell Me More</button>
       </div>
     </div>
   </section>
-  <section id="services" class="py-36">
+  <section id="services" class="py-36 px-6">
     <div class="text-center">
-      <h2 class="text-7xl uppercase font-[Prompt] font-bold">Services</h2>
-      <p class="text-2xl text-stone-500 font-[Inter] font-light mb-20">Proin laculis purus consequat sem cure.</p>
+      <h2 class="text-4xl lg:text-6xl xl:text-7xl uppercase font-[Prompt] font-bold">Services</h2>
+      <p class="text-sm md:text-lg lg:text-2xl text-stone-500 font-[Inter] font-light mb-20">
+        Proin laculis purus consequat sem cure.</p>
     </div>
     <!-- Сервіси -->
-    <div class="container mx-auto grid grid-cols-1 gap-14 lg:grid-cols-3 lg:gap-20">
+    <div class="container mx-auto grid grid-cols-1 gap-14 lg:grid-cols-3 xl:gap-20">
       <div class="flex flex-col items-center text-center">
-        <img src="./img/services/icon-basket.svg" alt="" class="h-24 w-24">
-        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">E-Commerce</h3>
-        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
-          porttitora
-          entum suscipit
+        <img src="./img/services/icon-basket.svg" alt="" class="h-20 w-20 md:h-24 md:w-24">
+        <h3 class="text-2xl lg:text-3xl font-bold font-[Prompt] mt-5 mb-1">E-Commerce</h3>
+        <p class="text-sm md:text-base font-light font-[Inter] text-stone-500 w-9/12 md:w-6/12 lg:w-fit">
+          Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
         </p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="./img/services/icon-laptop.svg" alt="" class="h-24 w-24">
-        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">Responsive Web</h3>
-        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
-          porttitora
-          entum suscipit
+        <img src="./img/services/icon-laptop.svg" alt="" class="h-20 w-20 md:h-24 md:w-24">
+        <h3 class="text-2xl lg:text-3xl font-bold font-[Prompt] mt-5 mb-1">Responsive Web</h3>
+        <p class="text-sm md:text-base font-light font-[Inter] text-stone-500 w-9/12 md:w-6/12 lg:w-fit">
+          Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
         </p>
       </div>
       <div class="flex flex-col items-center text-center">
-        <img src="./img/services/icon-locked.svg" alt="" class="h-24 w-24">
-        <h3 class="lg:text-3xl font-bold font-[Prompt] mt-5">Web Security</h3>
-        <p class="font-light font-[Inter] text-stone-500 px-8">Proin iaculis purus consequat sem cure digni ssim. Donec
-          porttitora
-          entum suscipit
+        <img src="./img/services/icon-locked.svg" alt="" class="h-20 w-20 md:h-24 md:w-24">
+        <h3 class="text-2xl lg:text-3xl font-bold font-[Prompt] mt-5 mb-1">Web Security</h3>
+        <p class="text-sm md:text-base font-light font-[Inter] text-stone-500 w-9/12 md:w-6/12 lg:w-fit">
+          Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit
         </p>
       </div>
     </div>
