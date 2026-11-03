@@ -335,6 +335,65 @@
     <img src="./img/logo/logo-dribbble.svg" alt="Dribbble" class="h-7 lg:h-8 xl:h-11">
   </section>
 
+  <!-- Section Contact -->
+  <section id="contact" class="relative isolate bg-black py-14 xl:py-20 px-10 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl uppercase font-[Prompt] font-bold text-white">contact us
+      </h2>
+      <p class="text-sm md:text-lg lg:text-2xl text-stone-500 font-[Inter] font-light mb-14 lg:mb-20 xl:mb-24">
+        Proin laculis purus consequat sem cure.</p>
+    </div>
+
+    <form class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:max-w-4xl lg:gap-8">
+      <div class="flex flex-col gap-6 lg:gap-7">
+        <input type="text" placeholder="your name *"
+          class="h-11 rounded-lg lg:h-12 placeholder-stone-400 placeholder:uppercase placeholder:text-sm placeholder:font-bold placeholder:pl-4 2xl:rounded-[10px]">
+        <input type="text" placeholder="your e-mail *"
+          class="h-11 rounded-lg lg:h-12 placeholder-stone-400 placeholder:uppercase placeholder:text-sm placeholder:font-bold placeholder:pl-4 2xl:rounded-[10px]">
+        <input type="text" placeholder="subject"
+          class="h-11 rounded-lg lg:h-12 placeholder-stone-400 placeholder:uppercase placeholder:text-sm placeholder:font-bold placeholder:pl-4 2xl:rounded-[10px]">
+      </div>
+      <textarea type="text" placeholder="your message *"
+        class="h-[180px] lg:h-[200px] rounded-lg placeholder-stone-400 placeholder:uppercase placeholder:text-sm placeholder:font-bold placeholder:pl-4 placeholder:pt-3 2xl:rounded-[10px]"></textarea>
+      <button type="submit" class="mx-auto md:col-span-2 uppercase font-bold bg-[#FED136] text-white rounded-lg 2xl:rounded-[10px]
+                md:text-xl xl:text-2xl w-8/12 md:w-4/12 lg:w-3/12 xl:w-4/12 py-2 md:py-3">send message</button>
+    </form>
+    <img src="./img/map-image.svg" alt=""
+      class="absolute pointer-events-none inset-y-0 right-0 -z-10 h-full object-cover object-left w-10/12 md:8/12 lg:w-6/12">
+  </section>
+
+  <!-- Section Footer -->
+  <section id="footer"
+    class="relative container mx-auto flex flex-col justify-center my-2 md:my-3 lg:my-4 lg:px-8 xl:my-5">
+    <div class="mx-auto flex justify-center gap-5 mb-2 lg:mb-0">
+      <div class="block group relative w-12 h-12">
+        <img src="./img/social/black-x.svg" alt="X"
+          class=" absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0">
+        <img src="./img/social/x.svg" alt="X"
+          class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="block group relative w-12 h-12">
+        <img src="./img/social/black-facebook.svg" alt="facebook"
+          class=" absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0">
+        <img src="./img/social/color-facebook.svg" alt="facebook"
+          class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="block group relative w-12 h-12">
+        <img src="./img/social/black-dribbble.svg" alt="dribbble"
+          class=" absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0">
+        <img src="./img/social/color-dribbble.svg" alt="dribbble"
+          class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+      <div class="block group relative w-12 h-12">
+        <img src="./img/social/black-pinterest.svg" alt="dribbble"
+          class=" absolute inset-0 w-full h-full object-cover transition-opacity duration-300 group-hover:opacity-0">
+        <img src="./img/social/color-pinterest.svg" alt="dribbble"
+          class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      </div>
+    </div>
+    <p class="text-sm text-center lg:text-left lg:absolute">© Copyright 2026 WebPortal.com</p>
+  </section>
+
   <script>
     // Показати / сховати меню на мобільних
     document.getElementById('burger').addEventListener('click', () => {
